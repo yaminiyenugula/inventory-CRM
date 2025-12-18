@@ -1,0 +1,167 @@
+/* Login Container - Centers the login card on the page */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Full viewport height for centering */
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); /* Professional gradient background */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Clean, corporate font */
+}
+
+/* Login Card - Main container for the login form */
+.login-card {
+  background: #ffffff; /* White background for contrast */
+  padding: 40px;
+  border-radius: 12px; /* Rounded corners for modern look */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  width: 100%;
+  max-width: 400px; /* Max width for desktop */
+  text-align: center;
+}
+
+/* Login Title - Main heading */
+.login-title {
+  font-size: 28px;
+  font-weight: 600;
+  color: #333333; /* Dark gray for professionalism */
+  margin-bottom: 8px;
+}
+
+/* Login Subtitle - Secondary text */
+.login-subtitle {
+  font-size: 16px;
+  color: #666666; /* Lighter gray for subtitle */
+  margin-bottom: 30px;
+}
+
+/* Login Form - Form container */
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Form Group - Container for each input field */
+.form-group {
+  margin-bottom: 20px;
+  text-align: left; /* Align labels to the left */
+}
+
+/* Form Label - Label for inputs */
+.form-label {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333333;
+  margin-bottom: 8px;
+}
+
+/* Form Input - Input fields */
+.form-input {
+  width: 100%;
+  padding: 12px 16px;
+  border: 2px solid #e0e0e0; /* Light border */
+  border-radius: 8px;
+  font-size: 16px;
+  color: #333333;
+  background-color: #f9f9f9; /* Light background */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+  box-sizing: border-box;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #667eea; /* Blue focus color */
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1); /* Subtle focus shadow */
+}
+
+.form-input::placeholder {
+  color: #999999; /* Placeholder color */
+}
+
+/* Error Message - Display error messages */
+.error-message {
+  background-color: #ffebee; /* Light red background */
+  color: #c62828; /* Dark red text */
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  border: 1px solid #ffcdd2; /* Red border */
+}
+
+/* Login Button - Submit button */
+.login-button {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); /* Gradient button */
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Hover effects */
+}
+
+.login-button:hover {
+  transform: translateY(-2px); /* Lift effect on hover */
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3); /* Shadow on hover */
+}
+
+.login-button:active {
+  transform: translateY(0); /* Reset on click */
+}
+
+/* Responsive Design - Media Queries */
+
+/* Tablet and smaller screens */
+@media (max-width: 768px) {
+  .login-card {
+    padding: 30px 20px; /* Reduce padding on smaller screens */
+    max-width: 90%; /* Allow more width on tablets */
+  }
+
+  .login-title {
+    font-size: 24px; /* Smaller title */
+  }
+
+  .login-subtitle {
+    font-size: 14px; /* Smaller subtitle */
+  }
+
+  .form-input {
+    padding: 10px 14px; /* Adjust input padding */
+  }
+
+  .login-button {
+    padding: 12px; /* Adjust button padding */
+  }
+}
+
+/* Mobile screens */
+@media (max-width: 480px) {
+  .login-container {
+    padding: 20px; /* Add padding to container for small screens */
+  }
+
+  .login-card {
+    padding: 25px 15px; /* Further reduce padding */
+    max-width: 100%; /* Full width on mobile */
+  }
+
+  .login-title {
+    font-size: 22px; /* Even smaller title */
+  }
+
+  .form-group {
+    margin-bottom: 15px; /* Reduce spacing */
+  }
+
+  .form-input {
+    font-size: 14px; /* Smaller font for inputs */
+  }
+
+  .login-button {
+    font-size: 14px; /* Smaller button font */
+  }
+}
